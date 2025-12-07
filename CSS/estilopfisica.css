@@ -1,0 +1,168 @@
+/* ============================================================
+   FONDO GENERAL
+============================================================ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+
+    /* Fondo azul elegante */
+    background: linear-gradient(135deg, #0c1128, #0d1f5a, #2153a8, #3c8bff);
+    background-size: 300% 300%;
+    animation: fondoAnimado 16s ease infinite;
+
+    color: #e8eeff;
+    line-height: 1.7;
+}
+
+/* Animación fondo */
+@keyframes fondoAnimado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+header {
+    text-align: center;
+    padding: 45px 20px;
+    background: rgba(255, 255, 255, 0.07);
+    border-bottom: 3px solid #5aa9ff;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 25px rgba(50, 130, 255, 0.35);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    color: #dbe9ff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px rgba(120, 170, 255, 0.6);
+}
+
+/* ============================================================
+   SECCIONES GENERALES
+============================================================ */
+
+section {
+    width: 85%;
+    margin: 30px auto;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 0 28px rgba(0,0,0,0.35);
+    border-left: 8px solid #6db8ff;
+
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 38px rgba(50, 140, 255, 0.5);
+}
+
+/* ============================================================
+   IMÁGENES
+============================================================ */
+
+section img {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+
+    box-shadow: 0 0 25px rgba(40, 110, 255, 0.45);
+    border: 2px solid rgba(130, 180, 255, 0.25);
+
+    transition: 0.3s;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+/* ============================================================
+   TITULOS DE SECCION
+============================================================ */
+
+h2 {
+    text-align: center;
+    font-size: 2.1rem;
+    color: #d7eaff;
+    text-shadow: 0 0 10px rgba(110, 160, 255, 0.6);
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #4eaaff, #89d1ff);
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+/* ============================================================
+   TEXTO
+============================================================ */
+
+p {
+    font-size: 1.15rem;
+    color: #f2f6ff;
+    text-align: justify;
+}
+
+/* ============================================================
+   BOTÓN REGRESAR
+============================================================ */
+
+nav {
+    text-align: center;
+    margin: 50px 0;
+}
+
+nav a {
+    text-decoration: none;
+    background: linear-gradient(135deg, #1b5ed6, #4bb2ff, #82d8ff);
+    padding: 13px 30px;
+    border-radius: 40px;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    box-shadow: 0 0 20px rgba(70, 150, 255, 0.5);
+    transition: 0.25s;
+}
+
+nav a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(100, 190, 255, 0.6);
+}
+
+/* ============================================================
+   FOOTER CENTRADO
+============================================================ */
+
+footer {
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 40px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-top: 3px solid #6ab5ff;
+
+    color: #d8eaff;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    box-shadow: 0 -4px 25px rgba(0,0,0,0.45);
+}

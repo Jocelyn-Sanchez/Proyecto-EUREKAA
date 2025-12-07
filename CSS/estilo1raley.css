@@ -1,0 +1,136 @@
+/* ===========================
+   ESTILO GENERAL
+=========================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #0a1e3f, #143b73, #1d5fa8);
+    color: #eaf2ff;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-bottom: 3px solid #7cb6ff;
+    backdrop-filter: blur(4px);
+}
+
+header h2 {
+    font-size: 2.8rem;
+    margin: 0;
+    color: #bcd9ff;
+}
+
+header i {
+    font-size: 1.2rem;
+    color: #d4e7ff;
+}
+
+/* ===========================
+   CONTENEDOR PRINCIPAL
+=========================== */
+.primeraLey {
+    width: 85%;
+    margin: 40px auto;
+    display: grid;
+    gap: 45px;
+}
+
+/* ===========================
+   SECCIONES
+=========================== */
+section, aside {
+    background: rgba(255, 255, 255, 0.07);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(6px);
+}
+
+section h3, section h4 {
+    color: #bcd9ff;
+}
+
+p, i {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* ===========================
+   IMÁGENES
+=========================== */
+section img,
+.primeraLey > img {
+    display: block;
+    margin: 25px auto;
+    width: 60%;
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(0,0,0,0.35);
+}
+
+/* Fórmulas más pequeñas */
+section img[src*="formula"] {
+    width: 45%;
+}
+
+/* Imagen intermedia */
+.primeraLey > img {
+    width: 55%;
+}
+
+/* ===========================
+   ASIDE
+=========================== */
+aside h2 {
+    color: #cbe2ff;
+}
+
+aside ul li a {
+    color: #a7d2ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    color: #e7f2ff;
+}
+
+/* ===========================
+   NAVEGACIÓN
+=========================== */
+nav {
+    text-align: center;
+    margin: 35px 0;
+}
+
+nav a {
+    padding: 12px 25px;
+    background: #7cb6ff;
+    color: #082544;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #c9e3ff;
+    color: #082544;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255,255,255,0.07);
+    border-top: 2px solid #7cb6ff;
+    color: #e3eeff;
+}

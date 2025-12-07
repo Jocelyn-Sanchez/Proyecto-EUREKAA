@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="date" content="02-12-25">
+    <meta name="description" content="Proyecto pagina web / revista de divulgación cientifica">
+    <link rel="stylesheet" href="CSS/juegos.css">
+    <title>Juego: Leyes de Newton</title>
+
+</head>
+<body>
+
+    <div class="card">
+        <h2>Juego de las Leyes de Newton</h2>
+        <p id="pregunta"></p>
+
+        <div id="opciones"></div>
+
+        <p id="resultado" style="font-weight: bold; margin-top: 15px;"></p>
+
+        <button onclick="siguientePregunta()">Siguiente</button>
+    </div>
+
+    <script>
+        const preguntas = [
+            { p: "¿Qué establece la Primera Ley de Newton?", 
+              o: ["Acción y reacción", "Inercia", "F = m·a"], 
+              c: 1 },
+
+            { p: "¿Cómo se llama la Segunda Ley de Newton?", 
+              o: ["Ley de inercia", "Ley de acción y reacción", "Ley de la fuerza"], 
+              c: 2 },
+
+            { p: "Según la Segunda Ley, la fuerza es igual a...", 
+              o: ["masa por aceleración", "velocidad por tiempo", "peso por distancia"], 
+              c: 0 },
+
+            { p: "¿Qué ley dice que 'a toda acción corresponde una reacción'?", 
+              o: ["Primera Ley", "Segunda Ley", "Tercera Ley"], 
+              c: 2 },
+
+            { p: "¿Qué propiedad causa que un objeto siga en movimiento o en reposo?", 
+              o: ["Inercia", "Potencia", "Tensión"], 
+              c: 0 },
+
+            { p: "Si empujas una pared, ¿qué ley explica que la pared ejerza una fuerza igual y opuesta?", 
+              o: ["Primera Ley", "Segunda Ley", "Tercera Ley"], 
+              c: 2 },
+
+            { p: "¿Qué pasa si aumentas la fuerza sobre un objeto con la misma masa?", 
+              o: ["Aumenta la aceleración", "Disminuye su peso", "Se queda igual"], 
+              c: 0 },
+
+            { p: "¿Qué ocurre si un objeto no cambia su movimiento?", 
+              o: ["No hay fuerzas", "Se cumple la inercia", "Se rompe la tercera ley"], 
+              c: 1 }
+        ];
+
+        let indice = 0;
+
+        function cargarPregunta() {
+            let q = preguntas[indice];
+            document.getElementById("pregunta").textContent = q.p;
+
+            let cont = document.getElementById("opciones");
+            cont.innerHTML = "";
+
+            q.o.forEach((texto, i) => {
+                let div = document.createElement("div");
+                div.className = "opcion";
+                div.textContent = texto;
+                div.onclick = () => verificar(i === q.c);
+                cont.appendChild(div);
+            });
+
+            document.getElementById("resultado").textContent = "";
+        }
+
+        function verificar(correcto) {
+            let r = document.getElementById("resultado");
+            if (correcto) {
+                r.textContent = "¡Correcto!";
+                r.style.color = "green";
+            } else {
+                r.textContent = "Incorrecto.";
+                r.style.color = "red";
+            }
+        }
+
+        function siguientePregunta() {
+            indice++;
+            if (indice >= preguntas.length) indice = 0;
+            cargarPregunta();
+        }
+
+        cargarPregunta();
+    </script>
+
+    <nav>
+        <a href="juego.html">REGRESAR</a>
+    </nav>
+    <footer>
+        <p>EUREKA © 2025 </p>
+    </footer>
+</body>
+</html>

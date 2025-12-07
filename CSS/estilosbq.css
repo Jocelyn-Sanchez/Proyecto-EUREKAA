@@ -1,0 +1,110 @@
+/* ===== TIPOGRAFÍA GENERAL ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #0a1a2e, #162945, #1f3760);
+    color: #e8e9eb;
+    line-height: 1.6;
+}
+
+/* ===== ENCABEZADO ===== */
+header {
+    text-align: center;
+    padding: 45px 20px;
+    background: linear-gradient(90deg, #203a72, #2f4a8c, #203a72);
+    color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* ===== TARJETA SABÍAS QUE ===== */
+.sabiasque section {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* ===== TITULAR CON RAYITA ===== */
+.sabiasque h3 {
+    font-size: 28px;
+    color: #92c2ff;
+    margin-top: 0;
+    text-shadow: 0 0 8px rgba(80,150,255,0.4);
+    padding-left: 18px;              
+    border-left: 4px solid #7cbcff;  /* LA RAYITA */
+    line-height: 1.4;
+}
+
+/* Texto */
+.sabiasque p {
+    font-size: 18px;
+    color: #e4e7ec;
+}
+
+/* ===== NAV ===== */
+nav {
+    text-align: center;
+    margin-top: 40px;
+}
+
+nav a {
+    background: linear-gradient(90deg, #4c82ff, #7c4dff);
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #7c4dff, #bd5cff);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a1423;
+    color: #8aa0c2;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    .sabiasque h3 {
+        font-size: 24px;
+    }
+
+    .sabiasque p {
+        font-size: 16px;
+    }
+
+    nav a {
+        padding: 10px 20px;
+    }
+}

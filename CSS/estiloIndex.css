@@ -1,0 +1,113 @@
+/* =========================================================
+   RESET GENERAL
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   ESTILO GENERAL DEL BODY
+========================================================= */
+body {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a0f2c, #13315c, #1b5773);
+    color: #e8f2ff;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   HEADER PORTADA
+========================================================= */
+.header-portada {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #162447, #1f4068);
+    border-bottom: 4px solid #4dd0e1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
+
+.logo-portada {
+    width: 320px;
+    max-width: 90%;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
+    transition: 0.3s;
+}
+
+.logo-portada:hover {
+    transform: scale(1.05);
+}
+
+/* =========================================================
+   PORTADA INTERIOR
+========================================================= */
+.portada {
+    width: 85%;
+    margin: 40px auto;
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+
+    border-left: 4px solid #6a5acd;
+    border-right: 4px solid #4dd0e1;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+
+/* Títulos de la portada */
+.portada h2 {
+    color: #4dd0e1;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.portada h3 {
+    font-size: 1.5rem;
+    color: #c68aff;
+    margin: 20px 0;
+}
+
+/* =========================================================
+   BOTÓN CONTINUAR
+========================================================= */
+nav a {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 14px 20px;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    background: linear-gradient(135deg, #4dd0e1, #6a5acd);
+    color: white;
+    border-radius: 30px;
+
+    box-shadow: 0 0 12px rgba(77,208,225,0.5);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(77,208,225,0.9);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 15px;
+
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(6px);
+
+    color: #aee6ff;
+    border-top: 3px solid #4dd0e1;
+}

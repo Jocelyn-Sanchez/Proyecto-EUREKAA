@@ -1,0 +1,76 @@
+/* FONDO GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #c490e7, #2d0644, #7630b8);
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* ENCABEZADO */
+header {
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+header i {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* NAV GENERAL */
+nav {
+    margin: 20px 0;
+}
+
+/* BOTONES / LINKS */
+nav a {
+    display: block;
+    width: 70%;
+    max-width: 350px;
+    margin: 12px auto;
+    padding: 14px 20px;
+    background: #2d0a5a;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* EFECTO HOVER */
+nav a:hover {
+    background: #400e91;
+    color: #075e66;
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+/* OPCIONAL: ESPACIADO FINAL */
+nav:last-of-type {
+    margin-top: 35px;
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 2px solid #000000;
+}

@@ -1,0 +1,221 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #121428, #1a1f45, #2e2f72, #644fae);
+    color: #eef0ff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ============================================================
+   ENCABEZADO
+============================================================ */
+
+.encabezado {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 3px solid #9d84ff;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(146, 118, 255, 0.3);
+}
+
+.encabezado h1 {
+    font-size: 3.3rem;
+    color: #d9ccff;
+    text-shadow: 0 0 10px rgba(225, 217, 255, 0.6);
+    letter-spacing: 2px;
+}
+
+.frase {
+    font-style: italic;
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #f0d7ff;
+    text-shadow: 0 0 8px rgba(253, 210, 255, 0.4);
+}
+
+/* ============================================================
+   INTRODUCCIÓN
+============================================================ */
+
+.intro {
+    display: flex;
+    gap: 30px;
+    padding: 50px 40px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 15px;
+    margin: 40px 50px;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 30px rgba(30, 20, 80, 0.35);
+}
+
+.intro img {
+    width: 38%;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(150, 120, 255, 0.5);
+    border: 2px solid rgba(200, 180, 255, 0.25);
+}
+
+.intro article {
+    width: 62%;
+    font-size: 1.08rem;
+    color: #f6efff;
+}
+
+/* ============================================================
+   HISTORIA
+============================================================ */
+
+.historia {
+    margin: 50px;
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 30px rgba(40, 30, 100, 0.3);
+}
+
+.historia img {
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(160, 140, 255, 0.4);
+}
+
+.historia h2 {
+    color: #c9b4ff;
+    margin-bottom: 8px;
+    text-shadow: 0 0 6px rgba(200, 180, 255, 0.6);
+}
+
+/* ============================================================
+   IMAGEN CENTRAL
+============================================================ */
+
+.img-central {
+    width: 65%;
+    display: block;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 35px rgba(90, 70, 170, 0.4);
+}
+
+/* ============================================================
+   TARJETAS DE LEYES
+============================================================ */
+
+.leyes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px 50px;
+}
+
+.tarjeta {
+    background: rgba(255, 255, 255, 0.07);
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    border: 1px solid rgba(200, 180, 255, 0.2);
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 25px rgba(140, 110, 255, 0.5);
+}
+
+.tarjeta h3 {
+    color: #dfc7ff;
+    font-size: 1.4rem;
+    text-shadow: 0 0 6px rgba(230, 210, 255, 0.5);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #b69cff;
+    color: #130f2e;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #dac8ff;
+    color: #1c173a;
+}
+
+/* ============================================================
+   RECURSOS
+============================================================ */
+
+.recursos {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    margin: 40px 50px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(60, 50, 100, 0.25);
+}
+
+.recursos h3 {
+    margin-bottom: 15px;
+    color: #d9caff;
+    text-shadow: 0 0 6px rgba(230, 210, 255, 0.5);
+}
+
+.recursos a {
+    display: block;
+    margin-bottom: 10px;
+    color: #f7d9ff;
+    text-decoration: none;
+}
+
+.recursos a:hover {
+    color: #c4b1ff;
+}
+
+/* ============================================================
+   BOTÓN REGRESAR
+============================================================ */
+
+.volver {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.volver a {
+    padding: 12px 22px;
+    background: #c8b1ff;
+    color: #1e1740;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(180, 150, 255, 0.4);
+    transition: 0.3s;
+}
+
+.volver a:hover {
+    background: #e6d8ff;
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 2px solid #af98ff;
+}

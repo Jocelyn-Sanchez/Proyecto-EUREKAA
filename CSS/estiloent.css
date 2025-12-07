@@ -1,0 +1,119 @@
+/* ===========================
+   ESTILOS GENERALES
+   =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #0a0f2c, #102a56, #1b4e6b);
+    color: #e4e8ff;
+}
+
+header {
+    background: linear-gradient(135deg, #112c58, #344696);
+    color: white;
+    text-align: center;
+    padding: 2.2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0 0 15px 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1.2px;
+}
+
+/* ===========================
+   CONTENIDO PRINCIPAL
+   =========================== */
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+.IntP, .EntP {
+    background: rgb(3, 2, 58);
+    padding: 1.7rem;
+    margin-bottom: 1.7rem;
+    border-radius: 10px;
+    border-left: 8px solid #ebe7f1; /* Verde */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.IntP p, .EntP p {
+    font-size: 1.12rem;
+}
+
+.IntM, .EntM {
+    background: rgb(46, 3, 71);
+    padding: 1.7rem;
+    margin-bottom: 1.7rem;
+    border-radius: 10px;
+    border-left: 8px solid #ebe7f1; /* Verde */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.IntP p, .EntP p {
+    font-size: 1.12rem;
+}
+
+/* Colores para entrevistador/entrevistado */
+i {
+    font-weight: bold;
+    color: #dee0e7; /* Morado */
+}
+
+/* ===========================
+   AUDIO
+   =========================== */
+section h3 {
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+    color: #3a86ff;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+/* ===========================
+   NAVEGACIÓN
+   =========================== */
+nav {
+    text-align: center;
+    margin: 2.3rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background: #3a86ff; /* Azul */
+    padding: 0.7rem 1.6rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+nav a:hover {
+    background: #7209b7; /* Cambia a morado */
+    border-color: #2ec4b6; /* Borde verde */
+}
+
+/* ===========================
+   PIE DE PÁGINA
+   =========================== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0a0f2c;
+    color: #8fa0c9;
+    margin-top: 40px;
+    border-top: 3px solid #4dd0e1;
+}

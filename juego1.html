@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="date" content="02-12-25">
+    <meta name="description" content="Proyecto pagina web / revista de divulgación cientifica">
+    <link rel="stylesheet" href="CSS/juegos.css">
+    <title>Juego de Electricidad </title>
+</head>
+<body>
+    <div class="card">
+        <h2> Juego de Electricidad — Nivel Principiante</h2>
+        <p id="pregunta"></p>
+
+        <div id="opciones"></div>
+
+        <p id="resultado" style="font-weight: bold; margin-top: 15px;"></p>
+
+        <button onclick="siguientePregunta()">Siguiente</button>
+    </div>
+
+    <script>
+        const preguntas = [
+            { p: "¿Qué unidad mide la corriente eléctrica?", o: ["Voltios", "Amperios", "Ohmios"], c: 1 },
+            { p: "¿Qué unidad mide la resistencia?", o: ["Ohmios", "Watts", "Joules"], c: 0 },
+            { p: "¿Qué unidad mide el voltaje?", o: ["Voltios", "Faradios", "Amperios"], c: 0 },
+            { p: "¿Qué material es buen conductor?", o: ["Madera", "Plástico", "Cobre"], c: 2 },
+            { p: "¿Qué ley relaciona voltaje, corriente y resistencia?", o: ["Ley de Newton", "Ley de Ohm", "Ley térmica"], c: 1 },
+            { p: "¿Cuál es una fuente de energía eléctrica?", o: ["Una piedra", "Una batería", "Un vaso de agua"], c: 1 },
+            { p: "La electricidad fluye a través de...", o: ["Un circuito", "Un dibujo", "Una lámpara apagada"], c: 0 },
+            { p: "¿Qué componente almacena carga eléctrica?", o: ["Resistor", "Capacitor", "Interruptor"], c: 1 }
+        ];
+
+        let indice = 0;
+
+        function cargarPregunta() {
+            let q = preguntas[indice];
+            document.getElementById("pregunta").textContent = q.p;
+
+            let cont = document.getElementById("opciones");
+            cont.innerHTML = "";
+
+            q.o.forEach((texto, i) => {
+                let div = document.createElement("div");
+                div.className = "opcion";
+                div.textContent = texto;
+                div.onclick = () => verificar(i === q.c);
+                cont.appendChild(div);
+            });
+
+            document.getElementById("resultado").textContent = "";
+        }
+
+        function verificar(correcto) {
+            let r = document.getElementById("resultado");
+            if (correcto) {
+                r.textContent = " ¡Correcto!";
+                r.style.color = "green";
+            } else {
+                r.textContent = " Incorrecto.";
+                r.style.color = "red";
+            }
+        }
+
+        function siguientePregunta() {
+            indice++;
+            if (indice >= preguntas.length) {
+                indice = 0;
+            }
+            cargarPregunta();
+        }
+
+        cargarPregunta();
+    </script>
+
+    <nav>
+        <a href="juego.html">REGRESAR</a>
+    </nav>
+    <footer>
+        <p>EUREKA © 2025 </p>
+    </footer>
+</body>
+</html>

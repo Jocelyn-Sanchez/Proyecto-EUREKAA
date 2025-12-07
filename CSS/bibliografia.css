@@ -1,0 +1,70 @@
+/* ======== ESTILOS GENERALES ======== */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 40px;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #e6e6ff 0%, #f0f6ff 100%);
+    color: #2e2b4f;
+}
+
+/* ======== TÍTULO PRINCIPAL ======== */
+
+h1 {
+    text-align: center;
+    color: #442a7a;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px #c7c2f5;
+}
+
+/* ======== SECCIONES ======== */
+
+.section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 15px rgba(68, 42, 122, 0.12);
+    border-left: 6px solid #6a5acd; /* morado suave */
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #3a2c88;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #a79bff;
+    padding-bottom: 6px;
+}
+
+/* ======== LISTAS ======== */
+
+ul {
+    list-style-type: disc;
+    padding-left: 22px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #2e2b4f;
+}
+
+/* ======== ENLACES ======== */
+
+a {
+    color: #3448ff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+a:hover {
+    color: #7c4cff;
+    text-decoration: underline;
+}
+
+/* ======== SUAVIZADOS ======== */
+
+* {
+    scroll-behavior: smooth;
+}

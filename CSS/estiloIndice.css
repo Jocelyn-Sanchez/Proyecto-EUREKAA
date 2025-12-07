@@ -1,0 +1,87 @@
+/* =========================================================
+   RESET GENERAL
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   BACKGROUND GENERAL DEL ÍNDICE
+========================================================= */
+body {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #062034, #07394d, #0b5261);
+    color: #dff8ff;
+    padding-bottom: 40px;
+}
+
+/* =========================================================
+   ESTILO DE LAS TARJETAS DEL ÍNDICE
+========================================================= */
+
+nav h1 {
+    background: rgba(255, 255, 255, 0.06);
+    border-left: 5px solid #48e5c2;     /* Verde agua */
+    border-right: 5px solid #7aa7ff;    /* Azul pastel */
+    padding: 18px;
+    margin: 18px auto;
+    width: 78%;
+    border-radius: 20px;
+    color: #e5feff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: 0.3s;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+nav h1:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #48e5c2, #7aa7ff);
+    color: #062034;
+    box-shadow: 0 0 20px rgba(72,229,194,0.7);
+}
+
+/* =========================================================
+   ENLACE DE REGRESAR AL INICIO
+========================================================= */
+
+nav a:not(:has(h1)) {
+    display: block;
+    margin: 30px auto;
+    width: 70%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 14px;
+    font-size: 1.3rem;
+    border-radius: 16px;
+    border: 3px solid #9c4dcc;
+    color: #b2b8bb;
+    transition: 0.3s;
+    backdrop-filter: blur(4px);
+    font-weight: bold;
+}
+
+nav a:not(:has(h1)):hover {
+    background: #9c4dcc;
+    transform: scale(1.07);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(156,77,204,0.8);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    background: rgba(0,0,0,0.25);
+    border-top: 3px solid #48e5c2;
+    color: #b0f7ff;
+    backdrop-filter: blur(4px);
+}

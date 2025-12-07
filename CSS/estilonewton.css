@@ -1,0 +1,113 @@
+/* Fuente general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+/* Fondo general */
+body {
+    background: linear-gradient(120deg, #1d133b, #2b1d58, #3d2a7a);
+    color: #f1ecff;
+    line-height: 1.7;
+    padding-bottom: 40px;
+}
+
+/* -------- ENCABEZADO -------- */
+.encabezado {
+    text-align: center;
+    padding: 40px 25px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.encabezado h1 {
+    font-size: 3rem;
+    color: #dddbff;
+    text-shadow: 0 0 12px rgba(200, 190, 255, 0.4);
+}
+
+.encabezado i {
+    color: #efe8ff;
+    font-size: 1.2rem;
+}
+
+/* -------- TARJETAS -------- */
+.tarjeta {
+    width: 90%;
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.35);
+}
+
+/* TITULOS */
+h2 {
+    margin-bottom: 15px;
+    color: #d8caff;
+    border-left: 6px solid #9d7aff;
+    padding-left: 12px;
+    font-size: 1.9rem;
+}
+
+/* Párrafos */
+p {
+    margin: 15px 0;
+    font-size: 1.05rem;
+}
+
+/* Imágenes */
+.foto-principal,
+.imagen-extra {
+    display: block;
+    margin: 25px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 14px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.45);
+}
+
+/* Listas */
+.lista {
+    margin-left: 35px;
+    font-size: 1.05rem;
+}
+
+.lista li {
+    margin-bottom: 10px;
+}
+
+/* -------- BOTÓN REGRESAR -------- */
+.reg {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-regresar {
+    text-decoration: none;
+    background: #7a5cff;
+    padding: 12px 28px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(125,90,255,0.4);
+    transition: 0.3s;
+}
+
+.btn-regresar:hover {
+    background: #9977ff;
+    box-shadow: 0 0 20px rgba(160,140,255,0.7);
+}
+
+/* -------- FOOTER -------- */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #ddd2ff;
+    font-size: 0.9rem;
+}

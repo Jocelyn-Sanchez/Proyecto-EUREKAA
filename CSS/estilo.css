@@ -1,0 +1,410 @@
+/* =========================================================
+   RESET GENERAL
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   ESTILOS GENERALES
+========================================================= */
+body {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #0a0f2c, #102a56, #1b4e6b);
+    color: #e4e8ff;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* =========================================================
+   HEADER GENERAL (para portada e interiores)
+========================================================= */
+header, .header-portada {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #162447, #1f4068);
+    border-bottom: 4px solid #4dd0e1;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* TITULOS HEADER */
+header h1,
+.header-portada h1 {
+    font-size: 4rem;
+    letter-spacing: 8px;
+    font-weight: 800;
+    color: #caf1f7;
+}
+
+/* SUBTÍTULO */
+header i,
+.header-portada i {
+    font-size: 1.2rem;
+    color: #c3e7ff;
+}
+
+/* =========================================================
+   LOGO PORTADA
+========================================================= */
+.logo-portada {
+    width: 320px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    filter: drop-shadow(0 0 8px rgba(0,0,0,0.4));
+    transition: 0.3s;
+}
+
+.logo-portada:hover {
+    transform: scale(1.05);
+}
+
+/* =========================================================
+   PORTADA
+========================================================= */
+.centrado {
+  text-align: justify;
+}
+
+.portada {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.25);
+    border-left: 4px solid #9c4dcc;
+    border-right: 4px solid #4dd0e1;
+}
+
+.portada h2 {
+    color: #4dd0e1;
+    font-size: 1.8rem;
+}
+
+.portada h3 {
+    color: #c77dff;
+    font-size: 1.3rem;
+}
+
+/* =========================================================
+   BOTÓN PRINCIPAL (portada)
+========================================================= */
+nav button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    margin: 20px auto;
+    display: block;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #4dd0e1, #6a5acd);
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(77,208,225,0.7);
+}
+
+/* =========================================================
+   PÁGINA ÍNDICE
+========================================================= */
+body.indice-body {
+    background: linear-gradient(135deg, #001b18, #00363b, #005b70);
+    color: #eafffb;
+}
+
+/* NAV índice — títulos principales */
+nav h1 {
+    background: rgba(255, 255, 255, 0.06);
+    border-left: 5px solid #00e5a8;
+    border-right: 5px solid #4dd0ff;
+    padding: 18px;
+    margin: 15px auto;
+    width: 75%;
+    border-radius: 20px;
+    color: #d4fff7;
+    font-size: 1.8rem;
+    transition: 0.3s;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+}
+
+nav h1:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #00e5a8, #4dd0ff);
+    color: #00363b;
+    box-shadow: 0 0 20px rgba(0,229,168,0.8);
+}
+
+/* Enlaces del índice */
+nav a:not(:has(h1)) {
+    display: block;
+    margin: 20px auto;
+    width: 75%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 12px;
+    font-size: 1.4rem;
+    border-radius: 14px;
+    border: 3px solid #7c4dff;
+    color: #eafffb;
+    transition: 0.3s;
+}
+
+nav a:not(:has(h1)):hover {
+    background: #7c4dff;
+    color: white;
+    transform: scale(1.08);
+}
+
+/* Footer índice */
+body.indice-body footer {
+    text-align: center;
+    padding: 15px;
+    background: #001b18;
+    border-top: 3px solid #00e5a8;
+    color: #63ffe0;
+}
+
+/* =========================================================
+   TARJETAS (índice o contenido)
+========================================================= */
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.tarjeta {
+    background: linear-gradient(145deg, #0a0a22, #121233);
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    border: 1px solid #1a1a2e;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform .25s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.02);
+}
+
+.tarjeta h2 {
+    color: #82aaff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #d7e3ff;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* =========================================================
+   LEYES DE NEWTON – INTRODUCCIÓN
+========================================================= */
+.introduccionLN {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+.introduccionLN img {
+    width: 350px;
+    box-shadow: 0px 4px 10px #00000033;
+}
+
+.introduccionLN section p {
+    text-align: justify;
+    font-size: 18px;
+    color: #e4e8ff;
+}
+
+/* =========================================================
+   HISTORIA
+========================================================= */
+main > div section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 30px;
+}
+
+main h3 {
+    font-size: 30px;
+    color: #a5d8ff;
+    margin-bottom: 15px;
+    border-left: 6px solid #4dd0e1;
+    padding-left: 10px;
+}
+section {
+    background: linear-gradient(145deg, #220570, #3232c2);
+    padding: 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    margin-bottom: 1.5rem;
+}
+
+section h2 {
+    color: #edf0f1;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+aside{
+    background: linear-gradient(145deg, #1f133f, #3232c2);
+    padding: 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    margin-bottom: 1.5rem;
+}
+
+aside h2 {
+    color: #edf0f1;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+aside ul {
+    list-style-type: disc; /* o el que prefieras */
+    list-style-position: inside; /* opcional */
+    color: white; /* color del texto */
+}
+
+aside a {
+    color: white;           /* color del texto del enlace */
+    text-decoration: none;  /* opcional: quita subrayado */
+}
+ul {
+  color: white;
+}
+
+li {
+  color: white;
+}
+/* =========================================================
+   TARJETAS LEYES DE NEWTON
+========================================================= */
+/* CONTENEDOR PRINCIPAL */
+.leyes {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* CADA ARTÍCULO */
+.leyes article {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border-left: 6px solid #2563eb;  /* azul elegante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leyes article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+/* TÍTULOS */
+.leyes article h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+/* TEXTO */
+.leyes article p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #1f2937;
+}
+
+ul {
+  width: fit-content;  /* Ajusta al contenido */
+  margin: 0 auto;      /* Centra horizontalmente */
+}
+/* Estilo para todos los UL de la página */
+ul {
+    list-style-type: disc; /* tipo de viñeta, puedes cambiar a circle o square */
+    padding-left: 20px;    /* espacio antes de las viñetas */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fuente moderna */
+}
+
+/* Estilo para los enlaces dentro de los UL */
+ul li a {
+    color: #bfd0d3;          /* color azul tecnológico */
+    text-decoration: none;    /* quita el subrayado */
+    transition: color 0.3s;   /* animación suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse */
+ul li a:hover {
+    color: #ff6f61;           /* cambia a un color contrastante al pasar el mouse */
+    text-decoration: underline; /* opcional, subrayado al pasar el mouse */
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0a0f2c;
+    color: #8fa0c9;
+    margin-top: 40px;
+    border-top: 3px solid #4dd0e1;
+}
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+@media (max-width: 900px) {
+    .introduccionLN {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 34px;
+        letter-spacing: 4px;
+    }
+
+    .introduccionLN img {
+        width: 250px;
+    }
+}

@@ -1,0 +1,176 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #2c022c, #301e96);
+    color: #e8e9eb;
+    line-height: 1.6;
+}
+
+/* ===== ENCABEZADO ===== */
+header, .header-portada {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #270a57, #24175f, #342685);
+    border-bottom: 4px solid #4dd0e1;
+    color: #2350b3;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.header-portada .logo-portada {
+    height: 130px;
+    border-radius: 8px;
+}
+
+.header-portada nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+
+}
+.logo-portada {
+    width: 400px;
+    max-width: 130%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    filter: drop-shadow(0 0 8px rgba(0,0,0,0.4));
+    transition: 0.3s;
+}
+
+.logo-portada:hover {
+    transform: scale(1.05);
+}
+
+/* ===== DISEÑO GENERAL ===== */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* ===== SECCIONES PRINCIPALES ===== */
+section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* ===== TITULOS DE SECCIÓN ===== */
+section h3 {
+    font-size: 28px;
+    margin-top: 0;
+    color: #7cbcff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ===== PÁRRAFOS ===== */
+p {
+    font-size: 17px;
+    color: #e6e9ef;
+}
+
+/* ===== IMÁGENES ===== */
+section img, 
+.intleyGravitacion img {
+    display: block;
+    width: 95%;
+    max-width: 420px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+
+/* ===== LISTAS ===== */
+ul {
+    list-style: square;
+    margin-left: 25px;
+    padding-left: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* ===== ASIDE ===== */
+aside {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(60, 60, 60, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+aside p {
+    font-weight: 600;
+    color: #b8dafe;
+    margin-bottom: 10px;
+}
+
+aside a {
+    color: #9cccff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+aside a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ===== NAV ===== */
+nav {
+    text-align: center;
+    margin: 40px 0;
+}
+
+nav a {
+    background: linear-gradient(90deg, #4c82ff, #7c4dff);
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #7c4dff, #bd5cff);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a1423;
+    color: #8aa0c2;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
